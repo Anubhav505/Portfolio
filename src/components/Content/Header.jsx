@@ -35,7 +35,7 @@ export default function Header() {
     <div className="flex flex-col items-start justify-between h-screen sticky top-0 w-1/2 py-24">
       <div className="space-y-3">
         <h1 className="text-6xl font-bold cursor-pointer">ANUBHAV</h1>
-        <p className="text-2xl">Front End Developer</p>
+        <p className="text-2xl">Software Developer</p>
         <div className="flex gap-6">
           <a href="https://github.com/Anubhav505" target="_blank" rel="noreferrer">
             <Github className="cursor-pointer hover:text-[#58ffcf] text-gray-400" />
