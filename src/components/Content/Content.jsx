@@ -4,9 +4,7 @@ import Main from "./Main";
 
 const Content = () => {
   useEffect(() => {
-    // Ensure page scrolls to top when component mounts
     window.scrollTo(0, 0);
-    // Reset any body styles that might interfere
     document.body.style.overflow = 'auto';
   }, []);
   
