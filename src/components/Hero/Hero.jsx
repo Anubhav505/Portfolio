@@ -5,6 +5,7 @@ import Scene from "./ThreeJs/Scene";
 import Left from "./Left";
 import Right from "./Right";
 import Loader from "./Loader";
+import { ArrowDown } from "lucide-react";
 
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
@@ -70,6 +71,7 @@ export default function Hero() {
         onModelLoaded={handleModelLoaded}
       />
       <Right />
+      <div className="absolute top-[90vh] left-[50vw] z-[100] animate-bounce"><ArrowDown color="black"/></div>
       {/* Add a spacer to ensure scrollable area */}
       <div className="absolute bottom-0 w-full h-[100vh] pointer-events-none select-none" />
     </div>
