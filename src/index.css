@@ -1,12 +1,18 @@
 @import "tailwindcss";
 
 html {
-  scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 body {
-    background: #f1f1f1;
-    color: #fff;
+        background: #f1f1f1;
+        color: #fff;
+        overflow: -moz-scrollbars-none;
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes arrow-bounce {

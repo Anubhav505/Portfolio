@@ -10,8 +10,8 @@ export default function Header() {
   useEffect(() => {
   const observerOptions = {
     root: null,
-    rootMargin: '-20% 0px -60% 0px',
-    threshold: 0.3,
+    rootMargin: '-10% 0px -70% 0px', // triggers when section is a bit below the top
+    threshold: 0.15,
   }
 
   const observer = new IntersectionObserver((entries) => {
@@ -60,6 +60,15 @@ export default function Header() {
               className={`cursor-pointer flex items-center gap-3 group transition-all duration-100 ${
                 activeSection === id ? 'text-[#58ffcf]' : 'text-gray-500 hover:text-[#58ffcf]'
               }`}
+              onClick={e => {
+                e.preventDefault();
+                const el = document.getElementById(id);
+                if (el) {
+                  const yOffset = window.innerHeight * 0.14;
+                  const y = el.getBoundingClientRect().top + window.pageYOffset - yOffset;
+                  window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+              }}
             >
               <div
                 className={`h-[1px] duration-100 ${
