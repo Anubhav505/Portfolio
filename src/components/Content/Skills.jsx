@@ -14,6 +14,7 @@ export default function Skills() {
                     <li className="skill">Next.js</li>
                     <li className="skill">TanStack Query</li>
                     <li className="skill">GSAP</li>
+                    <li className="skill">Three.js</li>
                     <li className="skill">ShadCN</li>
                 </ul>
             </div>
