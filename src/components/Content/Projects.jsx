@@ -41,7 +41,7 @@ export default function Projects() {
           href="https://vandelyn.com/"
           target="_blank"
         >
-          VANDALYN – Lifestyle eCommerce Platform &nbsp;
+          VANDELYN – Lifestyle eCommerce Platform &nbsp;
           <ArrowUpRight size={16} />
         </a>
         <p className="text-gray-400 text-justify text-[1rem]">
