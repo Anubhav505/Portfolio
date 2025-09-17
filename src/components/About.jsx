@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div
-      className="text-gray-400 text-justify text-[1rem] flex flex-col items-center justify-center gap-4 pt-24"
+      className="text-gray-400 text-justify text-[1rem] flex flex-col items-center justify-center gap-4 pt-16 lg:pt-24"
       id="about"
     >
       <p>

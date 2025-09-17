@@ -1,14 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Hero from "./components/Hero/Hero";
-import Content from "./components/Content/Content";
+import Content from "./components/Content";
 
 const App = () => {
 
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Hero key="/" />} />
-          <Route path="/portfolio" element={<Content key="/portfolio" />} />
+          <Route path="/" element={<Content/>} />
         </Routes>
       </BrowserRouter>
   );

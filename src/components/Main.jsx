@@ -5,7 +5,7 @@ import Projects from "./Projects";
 
 export default function Main() {
     return (
-        <div className="w-1/2 overflow-hidden flex flex-col gap-24">
+        <div className="w-full lg:w-1/2 overflow-hidden flex flex-col gap-24">
             <About />
             <Skills />
             <Experience />
